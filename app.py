@@ -6,7 +6,8 @@ st.set_page_config(page_title='Data Visualization',
                    page_icon='📄')
 
 st.title("Jobportal Data Visualization", anchor=False)
-st.text('by Farid Pahlevi')
+st.text("Developed by Farid Pahlevi")
+st.write("---")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
@@ -119,6 +120,7 @@ def main():
     expander.markdown('''**Active candidate** : Currently looking for new positions and they are able to apply for a job. They frequently visit job boards and other similar media to keep an eye out for new jobs.''')
     expander.markdown('''**Passive candidate** : Could change jobs now but aren’t currently looking for new opportunities. They might not have had the time to start their job search or might not be motivated to start looking.''')
     expander.markdown('''**Future candidate** : Candidates are not in a situation that allows them to apply for a vacant position even if they are interested. They might not yet have the qualifications for a new position or may have just started a new fixed term contract.''')
+    st.text('**App in belum sepenuhnya responsive')
 
 
 if __name__ == '__main__':
